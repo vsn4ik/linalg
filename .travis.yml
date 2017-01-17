@@ -1,0 +1,7 @@
+language: d
+script: dmd -de -main -o- -unittest src/matrix.d
+branches:
+  only:
+    - master
+notifications:
+  email: false
