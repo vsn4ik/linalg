@@ -1,0 +1,24 @@
+# Dependencies
+# $ gem install rouge
+# $ rougify style base16.solarized > assets/css/highlighter.css
+highlighter: rouge
+
+# Custom variables
+repository: "https://github.com/vsn4ik/linalg"
+name: "Linalg"
+description: "Linear algebra for D programming language"
+keywords: "linear algebra"
+
+author:
+  name: "Vasilii A."
+
+cdn:
+  bootstrap:
+    css: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css"
+    js:  "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.js"
+
+  jquery:
+    js: "https://code.jquery.com/jquery-3.4.1.slim.js"
+
+  fa:
+    css: "https://use.fontawesome.com/releases/v5.12.0/css/all.css"

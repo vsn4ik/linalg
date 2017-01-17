@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header collapsed" tabindex="0" data-toggle="collapse" data-target="#collapse-1">
+    <h5>Aliases Base</h5>
+  </div>
+
+  <div id="collapse-1" class="collapse">
+{% highlight d %}
+alias SquareMatrix(type, size_t size) = Matrix!(type, size, size);
+alias Vector(type, size_t size = DYNAMIC) = Matrix!(type, size, 1);
+alias RowVector(type, size_t size = DYNAMIC) = Matrix!(type, 1, size);
+alias isMatrix(type) = isInstanceOf!(Matrix, type);
+{% endhighlight %}
+  </div>
+</div>

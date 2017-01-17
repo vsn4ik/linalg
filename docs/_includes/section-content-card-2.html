@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-header collapsed" tabindex="0" data-toggle="collapse" data-target="#collapse-2">
+    <h5>Aliases Matrix</h5>
+  </div>
+
+  <div id="collapse-2" class="collapse">
+{% highlight d %}
+alias MatrixXi = Matrix!int;
+alias MatrixXf = Matrix!float;
+alias MatrixXd = Matrix!double;
+alias MatrixXr = Matrix!real;
+
+alias Matrix2i = SquareMatrix!(int, 2);
+alias Matrix2f = SquareMatrix!(float, 2);
+alias Matrix2d = SquareMatrix!(double, 2);
+alias Matrix2r = SquareMatrix!(real, 2);
+
+alias Matrix3i = SquareMatrix!(int, 3);
+alias Matrix3f = SquareMatrix!(float, 3);
+alias Matrix3d = SquareMatrix!(double, 3);
+alias Matrix3r = SquareMatrix!(real, 3);
+
+alias Matrix4i = SquareMatrix!(int, 4);
+alias Matrix4f = SquareMatrix!(float, 4);
+alias Matrix4d = SquareMatrix!(double, 4);
+alias Matrix4r = SquareMatrix!(real, 4);
+{% endhighlight %}
+  </div>
+</div>

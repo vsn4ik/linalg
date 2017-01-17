@@ -1,0 +1,32 @@
+a:not([href]) {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+figure,
+pre {
+  margin-bottom: 0;
+}
+
+figure {
+  padding: 0.5rem;
+}
+
+[data-toggle][data-target] {
+  cursor: pointer;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0.7;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.scroll-top:hover {
+  opacity: 1;
+}
