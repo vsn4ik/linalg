@@ -13,8 +13,11 @@ jobs:
         with:
           fetch-depth: 3
       
-      - name: Clone repository
+      - name: Install dmd
         run: curl https://dlang.org/install.sh | bash -s
 
+      - name: Activate dmd
+        run: source ~/dlang/dmd/activate
+
       - name: Run tests
-        run: ~/dlang/install.sh dmd -de -main -o- -unittest src/matrix.d
+        run: dmd -de -main -o- -unittest src/matrix.d
