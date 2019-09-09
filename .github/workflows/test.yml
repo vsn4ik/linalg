@@ -17,4 +17,4 @@ jobs:
         run: curl https://dlang.org/install.sh | bash -s
 
       - name: Run tests
-        run: dmd -de -main -o- -unittest src/matrix.d
+        run: ~/dlang/install.sh dmd -de -main -o- -unittest src/matrix.d
