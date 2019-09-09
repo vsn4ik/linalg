@@ -17,7 +17,7 @@ jobs:
         run: curl https://dlang.org/install.sh | bash -s
 
       - name: Activate dmd
-        run: source ~/dlang/dmd/activate
+        run: source ~/dlang/dmd-2.088.0/activate
 
       - name: Run tests
         run: dmd -de -main -o- -unittest src/matrix.d
