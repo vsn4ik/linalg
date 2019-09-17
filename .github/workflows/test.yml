@@ -17,8 +17,5 @@ jobs:
         with:
           dmd-version: 2.088.0
 
-      - name: Test
-        run: dub test
-
       - name: Run tests
         run: dmd -de -main -o- -unittest src/matrix.d
