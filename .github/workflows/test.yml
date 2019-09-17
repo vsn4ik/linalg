@@ -13,11 +13,12 @@ jobs:
         with:
           fetch-depth: 3
       
-      - name: Install dmd
-        run: curl https://dlang.org/install.sh | bash -s
+      - uses: WebFreak001/setup-dmd@v1
+        with:
+          dmd-version: 2.088.0
 
-      - name: Activate dmd
-        run: source ~/dlang/dmd-2.088.0/activate
+      - name: Test
+        run: dub test
 
       - name: Run tests
-        run: /bin/bash -e dmd -de -main -o- -unittest src/matrix.d
+        run: dmd -de -main -o- -unittest src/matrix.d
