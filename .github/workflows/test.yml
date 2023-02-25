@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install D compiler
-        uses: mihails-strasuns/setup-dlang@v0
+        uses: dlang-community/setup-dlang@v1
         with:
           compiler: dmd-latest
 

@@ -1,7 +1,7 @@
 # [Linalg](https://vsn4ik.github.io/linalg/)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Build Status](https://github.com/vsn4ik/linalg/workflows/Test/badge.svg)](https://github.com/vsn4ik/linalg/actions?workflow=Test)
+[![Build Status](https://github.com/vsn4ik/linalg/actions/workflows/test.yml/badge.svg)](https://github.com/vsn4ik/linalg/actions/workflows/test.yml)
 
 
 ## Quick start
